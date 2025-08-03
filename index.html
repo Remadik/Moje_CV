@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twoje Imię - CV Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <!-- DODAJ FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="fixed_css.css">
+</head>
+<body>
+    <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <aside id="sidebar">
+        <nav>
+            <div id="sidebar-pl" class="lang-content active">
+                <ul>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#education">Wykształcenie</a></li>
+                    <li><a href="#experience">Doświadczenie</a></li>
+                    <li><a href="#skills">Umiejętności</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+            
+            <div id="sidebar-en" class="lang-content">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="language-switcher">
+            <button data-lang="pl">PL</button>
+            <button data-lang="en">EN</button>
+        </div>
+    </aside>
+
+    <main id="content">
+        <div id="content-pl" class="lang-content active">
+            <section id="about" class="section">
+                <h2>O mnie</h2>
+                <div class="about-container">
+                    <div class="photo-frame">
+                        <img src="twoje-zdjecie.jpg" alt="Twoje zdjęcie profilowe">
+                    </div>
+                    <div class="about-content">
+                        <div class="accordion">
+                            <details closed>
+                                <summary>Absolwent Chemii Medycznej z praktycznym doświadczeniem w laboratoriach (analityka, farmacja GMP).</summary>
+                                <p>Specjalizuję się w kluczowych obszarach laboratoryjnych: przygotowywaniu próbek, walidacji metod oraz analizie i interpretacji danych. Moje dotychczasowe doświadczenie obejmuje zarówno laboratoria analityczne, jak i rygorystyczne środowisko produkcji farmaceutycznej GMP.</p>
+                                <p>Cenię precyzję, współpracę i jasną komunikację. Moim priorytetem jest rozwój zawodowy i osobisty w dynamicznej branży farmaceutycznej, chemicznej lub pokrewnej. Chętnie porozmawiam o możliwościach współpracy.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="education" class="section"> 
+                <h2>Wykształcenie</h2>
+                <div class="accordion">
+                    <details open>
+                        <summary>Magister Chemii Medycznej</summary>
+                        <p>Uniwersytet Jagielloński 2022 - 2024</p>
+                        <p>Specjalizacja w analityce chemicznej</p>
+                        <p>Temat pracy: "Zastosowanie komórek modelowych Jurkat/Luc-ds/PD-1 do testowania syntetycznych blokerów białka PD-L1"</p>
+                    </details>
+                </div>
+                
+                <div class="accordion">
+                    <details open>
+                        <summary>Inżynier Biotechnologii</summary>
+                        <p>Uniwersytet Przyrodniczy we Wrocławiu 2018 - 2022</p>
+                        <p>Specjalizacja w mikrobiologii</p>
+                        <p>Temat pracy: "Molekularne uwarunkowanie biosyntezy surfaktantów przez grzyby strzępkowe"</p>
+                    </details>
+                </div>
+            </section> 
+            
+            <section id="experience" class="section">
+                <h2>Doświadczenie</h2>
+                <div class="accordion">
+                    <details open>
+                        <summary>Młodszy specjalista ds. kotroli jakości</summary>
+                        <p>AFLOFARM Farmacja Polska, wrzesień 2024 - obecnie </p>
+                        <ul style="list-style-type: disc; padding-left: 1.5em;">
+                            <li>Kontrola jakości produktów końcowych, luzem oraz materiałów wyjściowych i opakowych</li>
+                            <li>Walidacja metod analitycznych</li>
+                            <li>Przygotowywanie próbek do badań</li>
+                            <li>Przeprowadzanie analiz chemicznych i fizykochemicznych</li>
+                            <li>Dokumentowanie wyników badań zgodnie z procedurami GMP</li>
+                            <li>Szeroko zakrojona współpraca w celu zapewniania jakości</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="accordion">
+                    <details open>
+                        <summary>Pracownik laboratorium rozwoju</summary>
+                        <p>Chespa farby, lipiec - październik 2023  </p>
+                        <ul style="list-style-type: disc; padding-left: 1.5em;">
+                            <li>Przygotowywanie receptur nowych produktów</li>
+                            <li>Aktywny udział w opracowywaniu nowych produktów</li>
+                            <li>Przygotowywanie próbek do badań</li>
+                            <li>Analizy fizyko-chemiczne</li>
+                            <li>Praca z różnorodnymi próbkami o zróżnicowanych wymaganiach</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="accordion">
+                    <details closed>
+                        <summary>Doradca klienta</summary>
+                        <p>Decathlon, sierpień 2022 - styczeń 2023 Wrocław, Kraków</p>
+                        <ul style="list-style-type: disc; padding-left: 1.5em;">
+                            <li>Praca z klientem, w tym szkolenia w pracy trudym klientem</li>
+                            <li>Praca zespołowa</li>
+                            <li>Aktywna sprzedaż i doradztwo</li>
+                            <li>Rozpatrywanie reklamacji</li>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="accordion">
+                    <details closed>
+                        <summary>Praktyki Studenckie w Katedrze Mikrobiologii</summary>
+                        <p>Uniwersytet Przyrodniczy we Wrocławiu czerwiec - lipiec 2021</p>
+                        <ul style="list-style-type: disc; padding-left: 1.5em;">
+                            <li>Analizy mikrobiologiczne</li>
+                            <li>Przygotowywanie próbek do badań</li>
+                            <li>Obsługa bioreaktora</li>
+                        </ul>
+                    </details>
+            </section>
+            
+            <section id="skills" class="section">
+                <h2>Umiejętności</h2>
+                
+                <div class="skills-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="technical">Techniczne</button>
+                        <button class="tab-btn" data-tab="soft">Miękkie</button>
+                        <button class="tab-btn" data-tab="languages">Języki</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="technical">
+                        <div class="carousel">
+                            <button class="carousel-btn prev">‹</button>
+                            <div class="carousel-items">
+                                <div class="skill-card">
+                                    <h3>Microsoft Office</h3>
+                                    <ul>
+                                        <li>Excel (zaawansowany)</li>
+                                        <li>Word (zaawansowany)</li>
+                                        <li>PowerPoint (średniozaawansowany)</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-card">
+                                    <h3>Analiza danych</h3>
+                                    <ul>
+                                        <li>Przetwarzanie danych</li>
+                                        <li>Wizualizacja</li>
+                                        <li>Interpretacja wyników</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-card">
+                                    <h3>Analiza chemiczna</h3>
+                                    <ul>
+                                        <li>Techniki spektroskopowe</li>
+                                        <li>Chromatografia cieczowa (HPLC) i gazowa (GC)</li>
+                                        <li>Analiza jakościowa i ilościowa</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-card">
+                                    <h3>Zaawansowane techniki biologiczne</h3>
+                                    <ul>
+                                        <li>Western blot</li>
+                                        <li>Hodowla i pasażowanie komórek eukariotycznych</li>
+                                        <li>Transfekcja i inne modyfikacje genetyczne</li>
+                                        <li>Izolacja DNA, RNA, białek</li>
+                                        <li>Elektroforeza żelowa (agarozowa, SDS-PAGE)</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-card">
+                                    <h3>AI</h3>
+                                    <p>Stworzyłem tę stronę internetową samodzielnie bez wcześniejszej znajomości kodowania wykorzystując do tego sztuczną inteligencję.</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn next">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>        
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="soft">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h3>Analityczne myślenie</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Praca pod presją</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Zarządzanie czasem</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Świetna organizacja pracy</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Kreatywne radzenie sobie z problemami</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Komunikacja</h3>
+                                <p>Umiejętność jasnego przekazywania informacji i współpracy w zespole.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="languages">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h3>Język polski</h3>
+                                <p>Ojczysty</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Język angielski</h3>
+                                <p>Poziom B2</p>
+                                <p>Swobodna komunikacja w mowie i piśmie</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Język hiszpański</h3>
+                                <p>Poziom A1</p>
+                                <p>W trakcie nauki</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section">
+                <h2>Kontakt</h2>
+                <button id="contact-toggle" class="animate__animated">
+                    Wyświetl kontakt
+                    <span id="click-counter">(0)</span>
+                </button>
+                <div id="contact-details" style="display: none; overflow: hidden;">
+                    <div id="contact-content">
+                        <p><i class="fas fa-envelope"></i> jedrek011999@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +48 668 108 771</p>
+                        <p><i class="fab fa-linkedin"></i> www.linkedin.com/in/jędrzej-madej-541575223</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="content-en" class="lang-content">
+            <section id="about" class="section">
+                <h2>About me</h2>
+                <div class="about-container">
+                    <div class="photo-frame">
+                        <img src="twoje-zdjecie.jpg" alt="Twoje zdjęcie profilowe">
+                    </div>
+                    <div class="about-content">
+                        <div class="accordion">
+                            <details closed>
+                                <summary>Medicinal Chemistry graduate with practical laboratory experience (analytics, pharmaceutical GMP).</summary>
+                                <p>I am building expertise in a demanding GMP environment, leveraging foundations gained in analytical and QA/QC laboratories. My key competencies include: sample preparation, method validation, and data analysis & interpretation. I effectively combine precision with strong communication and teamwork skills.</p>
+                                <p>My priority is professional and personal growth within the dynamic pharmaceutical, chemical, or related industries. I'm open to discussing collaboration opportunities.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="education" class="section"> 
+                <h2>Education</h2>
+                <div class="accordion">
+                    <details open>
+                        <summary>Master of Science in Medicinal Chemistry</summary>
+                        <p>Jagiellonian University 2022 - 2024</p>
+                        <p>Specialisation in chemical analysis</p>
+                        <p>Thesis: "Use of Jurkat/Luc-ds/PD-1 model cells to test synthetic PD-L1 protein blockers".</p>
+                    </details>
+                </div>
+                
+                <div class="accordion">
+                    <details open>
+                        <summary>Engineer in Biotechnology</summary>
+                        <p>Wrocław University of Environmental and Life Sciences 2018 - 2022</p>
+                        <p>Specialisation in microbiology</p>
+                        <p>Thesis: "Molecular determinants of surfactant biosynthesis by filamentous fungi".</p>
+                    </details>
+                </div>
+            </section> 
+            
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                <div class="accordion">
+                    <details open>
+                        <summary>Junior quality control specialist</summary>
+                        <p>AFLOFARM Farmacja Polska, September 2024 - obecnie </p>
+                        <ul style="list-style-type: disc; padding-left: 1.5em;">
+                            <li>Quality control of finished products, bulk products, raw materials and packaging materials</li>
+                            <li>Validation of analytical methods</li>
+                            <li>Sample preparation for testing</li>
+                            <li>Conducting chemical and physicochemical analyses</li>
+                            <li>Documenting test results in accordance with GMP procedures</li>
+                            <li>Extensive collaboration to ensure quality</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="accordion">
+                    <details open>
+                        <summary>Development laboratory technician</summary>
+                        <p>Chespa farby, July - October 2023  </p>
+                        <ul style="list-style-type: disc; padding-left: 1.5em;">
+                            <li>Preparation of new product recipes</li>
+                            <li>Active participation in the development of new products</li>
+                            <li>Physico-chemical analyses</li>
+                            <li>Working with diverse samples with varying requirements</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="accordion">
+                    <details closed>
+                        <summary>Customer advisor</summary>
+                        <p>Decathlon, August 2022 - January 2023</p>
+                        <ul style="list-style-type: disc; padding-left: 1.5em;">
+                            <li>Customer service, including training in working with demanding clients</li>
+                            <li>Teamwork</li>
+                            <li>Active sales and consulting</li>
+                            <li>Handling complaints</li>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="accordion">
+                    <details closed>
+                        <summary>Student Internships in the Department of Microbiology</summary>
+                        <p>Wrocław University of Environmental and Life Sciences June - July 2021</p>
+                        <ul style="list-style-type: disc; padding-left: 1.5em;">
+                            <li>Microbiological analyses</li>
+                            <li>Preparation of samples for testing</li>
+                            <li>Bioreactor operation</li>
+                        </ul>
+                    </details>
+            </section>
+            
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+
+                <div class="skills-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="technical">Technical</button>
+                        <button class="tab-btn" data-tab="soft">Soft</button>
+                        <button class="tab-btn" data-tab="languages">Languages</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="technical">
+                        <div class="carousel">
+                            <button class="carousel-btn prev">‹</button>
+                            <div class="carousel-items">
+                                <div class="skill-card">
+                                    <h3>Microsoft Office</h3>
+                                    <ul>
+                                        <li>Excel (advanced)</li>
+                                        <li>Word (advanced)</li>
+                                        <li>PowerPoint (intermediate)</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-card">
+                                    <h3>Data analysis</h3>
+                                    <ul>
+                                        <li>Data processing</li>
+                                        <li>Visualization</li>
+                                        <li>Interpretation of results</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-card">
+                                    <h3>Chemical analysis</h3>
+                                    <ul>
+                                        <li>Spectroscopic techniques</li>
+                                        <li>Liquid (HPLC) and gas (GC) chromatography</li>
+                                        <li>Qualitative and quantitative analysis</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-card">
+                                    <h3>Advanced biological techniques</h3>
+                                    <ul>
+                                        <li>Western blot</li>
+                                        <li>Culturing and passaging eukaryotic cells</li>
+                                        <li>Transfection and other genetic modifications</li>
+                                        <li>DNA and protein isolation</li>
+                                        <li>Gel electrophoresis (agarose, SDS-PAGE)</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-card">
+                                    <h3>AI</h3>
+                                    <p>I independently created this website without any prior coding experience, utilizing artificial intelligence for the entire process.</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn next">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>        
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="soft">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h3>Analytical thinking</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Working under pressure</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Time management</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Excellent work organization</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Creative problem solving</h3>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Communication</h3>
+                                <p>Ability to clearly convey information and collaborate in a team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="languages">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h3>Polish</h3>
+                                <p>Native</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>English</h3>
+                                <p>B2 level</p>
+                                <p>Communicate freely in speech and writing</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Spanish</h3>
+                                <p>A1 level</p>
+                                <p>In the process of learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <button id="contact-toggle" class="animate__animated">
+                    View contact
+                    <span id="click-counter">(0)</span>
+                </button>
+                <div id="contact-details" style="display: none; overflow: hidden;">
+                    <div id="contact-content">
+                        <p><i class="fas fa-envelope"></i> jedrek011999@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +48 668 108 771</p>
+                        <p><i class="fab fa-linkedin"></i> www.linkedin.com/in/jędrzej-madej-541575223</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <script src="fixed_script.js"></script>
+</body>
+</html>
